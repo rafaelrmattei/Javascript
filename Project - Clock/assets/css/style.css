@@ -1,0 +1,174 @@
+body{
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  font-family: "Roboto Flex", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#background-mask{
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: RGBA(255,255,255,.3);
+  z-index: -1;
+}
+
+#clock{
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+#clock h1{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: RGBA(0,0,0,0.7);
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+#clock #analog{
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 3px solid RGBA(0,0,0,0.7);
+  background-color: RGBA(0,0,0,0.2);
+}
+
+#clock #analog #hour12{
+  transform: rotate(0deg);
+}
+
+#clock #analog #hour1{
+  transform: rotate(30deg);
+}
+
+#clock #analog #hour2{
+  transform: rotate(60deg);
+}
+
+#clock #analog #hour3{
+  transform: rotate(90deg);
+}
+
+#clock #analog #hour4{
+  transform: rotate(120deg);
+}
+
+#clock #analog #hour5{
+  transform: rotate(150deg);
+}
+
+#clock #analog #hour6{
+  transform: rotate(180deg);
+}
+
+#clock #analog #hour7{
+  transform: rotate(210deg);
+}
+
+#clock #analog #hour8{
+  transform: rotate(240deg);
+}
+
+#clock #analog #hour9{
+  transform: rotate(270deg);
+}
+
+#clock #analog #hour10{
+  transform: rotate(300deg);
+}
+
+#clock #analog #hour11{
+  transform: rotate(330deg);
+}
+
+#clock #analog #hours {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -3px;
+}
+
+#clock #analog #hours .hour {
+  width: 132px;
+  height: 5px;
+  position: absolute;
+  transform-origin: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#clock #analog #hours .hour .marker {
+  width: 15px;
+  height: 100%;
+  background-color: #000;
+}
+
+#hands {
+  width: 100%;
+  height: 100%;
+  padding-left: 48.4%;
+  margin-top: -101.5%;
+}
+
+#hands .p {
+  transform-origin: left;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  position: absolute;
+  margin: 5px 0 0 5px;
+}
+
+#hands .p_s {
+  width: 100px;
+  height: 3px;
+  background-color: firebrick;
+}
+
+#hands .p_m {
+  width: 110px;
+  height: 3px;
+  background-color: #000;
+}
+
+#hands .p_h {
+  width: 70px;
+  height: 3px;
+  background-color: #000;
+}
+
+#hands .center {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+#clock #digital{
+  text-align: center;
+  font-size: 24px;
+  color: RGBA(0,0,0,0.7);
+  font-weight: 700;
+}

@@ -1,0 +1,159 @@
+body{
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  font-family: "Roboto Flex", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#background-mask{
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: RGBA(0,0,0,.6);
+  z-index: -1;
+}
+
+#weather{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  backgrou
+}
+
+#weather h1{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+#weather #search{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+#weather #search input{
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 1px 10px;
+  font-family: "Roboto Flex", sans-serif;
+  width: 70%;
+}
+
+#weather #search button{
+  height: 32px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 0px 10px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  width: 30%;
+}
+
+#weather #alerts{
+  display: none;
+  color: #FFF;
+  font-weight: 500;
+  text-align: center;
+  background-color: RGBA(0,0,0,0.5);
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#weather #result {
+  display: none;
+  padding: 15px;
+  background-color: RGBA(0,0,0,0.5);
+  border-radius: 5px;
+  border: 2px solid black;
+  color: #FFF;
+  font-weight: 500;
+}
+
+
+#weather #result .city {
+  width: 100%;
+  color: #FFF;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#weather #result .info {
+  display: flex;
+  width: 100%;
+}
+
+#weather #result .info .temp {
+  flex: 1;
+  text-align: center;
+}
+#weather #result .info .wind {
+  flex: 1;
+  text-align: center;
+}
+
+#weather #result .tempTitle,
+#weather #result .windTitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#weather #result .tempInfo,
+#weather #result .windInfo {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#weather #result .tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#weather #result .windInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#weather #result .windArea {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+#weather #result .windPoint{
+  width: 15px;
+  height: 1px;
+  background-color: #FFF;
+  transform-origin: left;
+  transform: rotate(0deg);
+}
